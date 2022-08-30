@@ -180,7 +180,14 @@ height: 100vh;
     flex-direction: column;
     background-size: cover;
     height: 100vh;
-    }
+}
+
+.part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .section4 h1 {
     color: #fff;
