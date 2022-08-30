@@ -16,14 +16,15 @@ function sentences(verb, adverb, person, place, adj) {
 
     ranN = Math.floor(Math.random() * sentenceArray.length)     /// 0 to 2
 
-    return sentenceArray[ranN]
+    return sentenceArray[ranN];
 
-    
 }
 
 // Second Game
 
 var a = [1, 2, 4, 9]
+
+
 var wordArr = [
     {
         word: "dog",
@@ -44,35 +45,42 @@ var wordArr = [
 ]
 
 var rN = Math.floor(Math.random() * wordArr.length);
+
 var word = wordArr[rN].word;
 var hint = wordArr[rN].hint;
 document.getElementById("word").innerHTML = word;
 document.getElementById("hint").innerHTML = hint;
 var w = document.getElementById("word");
-var correct = [];
+var correct = []
 var counter = word.length + 2;
 
-document.getElementById("wrong").innerHTML = counter
+document.getElementById("wrong").innerHTML = counter;
 
 
 var splitWord = word.split("");
+
 var emptySplitWord = [];
 
-for (i = 0, i < splitWord.length; i++;) { // i = i + 1
-    emptySplitWord[i] = "-"
+console.log(splitWord)
+
+for (i = 0; i < splitWord.length; i++) {
+    emptySplitWord[i] = "_"
     console.log(emptySplitWord);
-    document.getElementById("word").innerHTML = emptySplitWord.join(" ")
+    w.innerHTML = emptySplitWord.join(" ")
 }
 
+
+
+//get Letter
 function enterLetter() {
     var letter = document.getElementById("letter").value;
 
     for (x = 0; x < splitWord.length; x++) {
-        if (letter = splitWord[i]) {
+        if (letter == splitWord[x]) {
             emptySplitWord[x] = letter;
-            word.innerHTML = emptySplitWord.join(" ");
+            w.innerHTML = emptySplitWord.join(" ");
             document.getElementById("letter").value = "";
-            computer.push(1);
+            correct.push(1);
         }else {
             document.getElementById("letter").value = "";
         }
@@ -89,57 +97,3 @@ function enterLetter() {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
