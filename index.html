@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section3">Section 4</a></li>
+        </ul>
+    </nav>
+    
+    <div class="section1" id="section1">
+        <div class="header">
+            <h1>Welcome to <br>a Nicer Website</h1>
+        </div>
+        <div class="intro">
+            <p>Scroll to see more</p>
+        </div>
+    </div>
+
+    <div class="section2" id="section2">
+        <div class="content">
+            <p class="paragraph" id="p1">Sometime you have to choose the right background image. An image like this makes it harder to insert text in the center because iot has lots of "information"</p>
+            <p class="paragraph" id="p2">Remember, always backup you work on github. This is very, very useful if for some reason you computer decides to take some days off!</p>
+        </div>
+    </div>
+
+    <div class="section3" id="section3">
+        <div class="part1">
+            <h1>Random Sentence</h1>
+
+            <p>Enter a place: <input type="text" id="place" placeholder="place"> </p>
+
+            <p>Enter a persons name: <input type="text" id="person" placeholder="person"> </p>
+
+            <p>Enter a verb (drive, eat, run): <input type="text" id="verb" placeholder="verb"> </p>
+
+            <p>Enter an adjective (adorable, intelligent, damaged): <input type="text" id="adj" placeholder="adj"> </p>
+
+            <p>Enter an adverb (furiously, loudly, frantically): <input type="text" id="adverb" placeholder="adverb"> </p>
+
+            <button onclick="getData()" id="button">click to find out the sentence</button>
+
+            
+        </div>
+
+
+        <h1 class="s3-Sentence" id="sentence">Sentence</h1>
+
+    </div>
+
+    <div class="section4" id="section4">
+        <div class="part2">
+            <h1>Guess the Word</h1>
+            <input type="text" id="letter">
+            <button onclick="enterLetter()" id="submit">Click</button>
+
+            <h4 id="wrong">You have x chances left</h4>
+
+            <div class="grid">
+                <h1 id="word"></h1>
+                <h4 id="hint">Hint xxxxxxxxx</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ <script src="app.js"></script>
+</html>
